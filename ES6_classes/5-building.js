@@ -4,7 +4,11 @@ export default class Building {
         if (typeof sqft !== 'number') {
             throw new TypeError('Sqft must be a number');
         }
+        if (new.target === Building) {
+            throw new Error('Building is an abstract class and cannot be instantiated directly');
+        }
         this._sqft = sqft;
+
     }
     get sqft() {
         return this._sqft;
