@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-from typing import Callable
 """make_multiplier that takes a float
 multiplier as argument and returns a function"""
+from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
