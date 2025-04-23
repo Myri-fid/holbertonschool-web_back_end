@@ -4,8 +4,8 @@ from typing import Callable
 multiplier as argument and returns a function"""
 
 
-def make_multiplier(multiplier: Callable[[float], float]) -> float[[float], float]:
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """make_multiplier that takes a float
     multiplier as argument and returns a function"""
 
-    return sum(multiplier)
+    return make_multiplier
