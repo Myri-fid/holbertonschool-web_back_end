@@ -20,10 +20,10 @@ async def async_comprehension() -> List[float]:
     return [num async for num in async_generator()]
 
 
-async def measure_runtime():
+async def measure_runtime() -> float:
     """should measure the total runtime and return it."""
 
     start_time = time.time()
+    await asyncio.gather(*(async_comprehension() for _ in range(4)))
     end_time = time.time()
-    total_runtime = end_time - start_time
-    return total_runtime
+    return end_time - start_time
