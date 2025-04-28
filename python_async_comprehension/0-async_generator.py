@@ -5,7 +5,7 @@ import asyncio
 import random
 
 
-async def async_generator() -> AsyncGenerator[int, None]:
+async def async_generator() -> AsyncGenerator[float, None]:
     """coroutine called async_generator that takes no arguments."""
 
     for i in range(10):
