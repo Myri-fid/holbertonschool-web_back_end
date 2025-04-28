@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """coroutine called async_generator that takes no arguments."""
-from typing import AsyncGenerator
 import asyncio
 import random
 
