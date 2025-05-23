@@ -4,8 +4,8 @@ process.stdin.setEncoding("utf8");
 
 process.stdin.on("data", (data) => {
   console.log(`Your name is: ${data.trim()}`);
+  console.log("This important software is now closing");
+  process.exit(0);
 });
 
-process.stdin.on("end", () => {
-  console.log("This important software is now closing");
-});
+module.exports = {};
